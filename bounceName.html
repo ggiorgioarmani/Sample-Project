@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>MAGNO LABORATORY 6.1</title>
+
+     <style>
+          canvas {
+               padding-left: 0;
+               padding-right: 0;
+               margin-left: auto;
+               margin-right: auto;
+               margin-top: 0%;
+               display: block;
+          }
+
+          body {
+               background: url(images/bg.jpg) no-repeat 
+               center center fixed; 
+               -webkit-background-size: cover;
+               -moz-background-size: cover;
+               -o-background-size: cover;
+               background-size: cover;
+          }
+
+          .center {
+               position:absolute;
+               top: 70%;
+               left: 49%;
+               transform: translate(-50%, -50%);
+          }
+
+          .circle:nth-child(1),
+          .circle:nth-child(2),
+          .circle:nth-child(3),
+          .circle:nth-child(4),
+          .circle:nth-child(5),
+          .circle:nth-child(6),
+          .circle:nth-child(7) {
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+               
+               transform: translateX(-50%);
+               animation: bounce 1s infinite linear;
+               display: inline-flex
+          }
+
+          .circle:nth-child(1){
+               /* background: linear-gradient(to bottom, #990000 0%, #ffffff 100%); */
+               background-image: url(images/g.png);
+               box-shadow: 0 0 15px 5px rgb(255, 72, 112);
+          }
+
+          .circle:nth-child(2) {
+               background-image: url(images/i.png);
+               box-shadow: 0 0 15px 5px rgb(255, 72, 112);
+          }
+
+          .circle:nth-child(3) {
+               background-image: url(images/o.png);
+               box-shadow: 0 0 15px 5px rgb(255, 72, 112);
+          }
+          .circle:nth-child(4){
+               /* background: linear-gradient(to bottom, #990000 0%, #ffffff 100%); */
+               background-image: url(images/r.png);
+               box-shadow: 0 0 15px 5px #08f;
+          }
+
+          .circle:nth-child(5) {
+               background-image: url(images/g.png);
+               box-shadow: 0 0 15px 5px rgb(22, 236, 111);
+          }
+
+          .circle:nth-child(6) {
+               background-image: url(images/i.png);
+               box-shadow: 0 0 15px 5px rgb(22, 236, 111);
+          }
+
+          .circle:nth-child(7) {
+               background-image: url(images/o.png);
+               box-shadow: 0 0 15px 5px rgb(22, 236, 111);
+          }
+
+          @keyframes bounce {
+               0% {
+                    transform: translateY(0) ;
+               }
+               50% {
+                    transform: translateY(-250px);
+               }
+               100% {
+                    transform:translateY(0);
+               }
+          }
+     </style>
+</head>
+<body> 
+     <canvas id="my_canvas" height="540" width="1135" style="border:1px solid black"></canvas>
+     <div class="center">
+     <div class="circle"></div>
+     <div class="circle"></div>
+     <div class="circle"></div>
+     <div class="circle"></div>
+     <div class="circle"></div>
+     <div class="circle"></div>
+     <div class="circle"></div>
+     </div>
+</body>
+</html>
